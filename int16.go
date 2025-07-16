@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"strconv"
 
-	"github.com/guregu/null/v6/internal"
+	"github.com/goforj/null/v6/internal"
 )
 
 // Int16 is an nullable int16.

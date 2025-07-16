@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/guregu/null/v6/internal"
+	"github.com/goforj/null/v6/internal"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/guregu/null/v6/internal"
+	"github.com/goforj/null/v6/internal"
 )
 
 // Float is a nullable float64. Zero input will be considered null.
