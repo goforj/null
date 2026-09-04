@@ -2,13 +2,16 @@ name: Deploy
 
 on: [push, pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   spin:
     runs-on: ubuntu-latest
     name: Test
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-go@0a12ed9d6a96ab950c8f026ed9f722fe0da7ef32 # v5.0.2
         with:
           go-version: 'stable'
       - run: go test -v -race -coverpkg=./... ./...
